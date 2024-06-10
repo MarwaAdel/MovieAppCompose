@@ -14,7 +14,7 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
     ) {
         val (text) = createRefs()
         Text(
-            text = "Profile",
+            text = "Implemented soon",
             color = myColors.surface,
             modifier = Modifier
                 .constrainAs(text) {

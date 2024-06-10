@@ -85,7 +85,7 @@ fun BottomBar(
             .background(Color.Transparent)
             .fillMaxWidth()
     ) {
-        val (movie, search, ticket, profile, divider) = createRefs()
+        val (movie, search, ticket, divider) = createRefs()
 
         Divider(
             modifier = Modifier
@@ -137,21 +137,6 @@ fun BottomBar(
             navController = navController,
             modifier = Modifier.constrainAs(ticket) {
                 start.linkTo(search.end, spacing_2_2)
-                end.linkTo(profile.start)
-                linkTo(
-                    top = parent.top,
-                    topMargin = spacing_4_2,
-                    bottomMargin = spacing_2,
-                    bottom = parent.bottom
-                )
-            }
-        )
-        AddItem(
-            screen = BottomBarScreen.Profile,
-            currentDestination = currentDestination,
-            navController = navController,
-            modifier = Modifier.constrainAs(profile) {
-                start.linkTo(ticket.end)
                 end.linkTo(parent.end, spacing_2_2)
                 linkTo(
                     top = parent.top,
@@ -161,6 +146,21 @@ fun BottomBar(
                 )
             }
         )
+//        AddItem(
+//            screen = BottomBarScreen.Profile,
+//            currentDestination = currentDestination,
+//            navController = navController,
+//            modifier = Modifier.constrainAs(profile) {
+//                start.linkTo(ticket.end)
+//                end.linkTo(parent.end, spacing_2_2)
+//                linkTo(
+//                    top = parent.top,
+//                    topMargin = spacing_4_2,
+//                    bottomMargin = spacing_2,
+//                    bottom = parent.bottom
+//                )
+//            }
+//        )
     }
 }
 
@@ -280,8 +280,8 @@ fun BottomNavGraph(
                 mainNavController = mainNavController
             )
         }
-        composable(route = BottomBarScreen.Profile.route) {
-            ProfileScreen()
-        }
+//        composable(route = BottomBarScreen.Profile.route) {
+//            ProfileScreen()
+//        }
     }
 }

@@ -35,9 +35,9 @@ sealed class BottomBarScreen(
     )
 
     // for profile
-    object Profile : BottomBarScreen(
-        route = "profile",
-        title = "Profile",
-        icon = Icons.Outlined.AccountCircle
-    )
+//    object Profile : BottomBarScreen(
+//        route = "profile",
+//        title = "Profile",
+//        icon = Icons.Outlined.AccountCircle
+//    )
 }
