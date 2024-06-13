@@ -42,7 +42,6 @@ import coil.request.ImageRequest
 import coil.size.Size
 import com.marwaadel.moviesapp.movieList.data.remote.MovieApi
 import com.marwaadel.moviesapp.movieList.domain.model.Movie
-import com.marwaadel.moviesapp.movieList.util.RatingBar
 import com.marwaadel.moviesapp.movieList.util.Screen
 import com.marwaadel.moviesapp.movieList.util.getAverageColor
 

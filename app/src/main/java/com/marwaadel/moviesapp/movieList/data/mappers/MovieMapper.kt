@@ -5,8 +5,6 @@ import com.marwaadel.moviesapp.movieList.data.remote.respnod.MovieDto
 import com.marwaadel.moviesapp.movieList.domain.model.Movie
 
 
-
-
 fun MovieDto.toMovieEntity(
     category: String
 ): MovieEntity {
